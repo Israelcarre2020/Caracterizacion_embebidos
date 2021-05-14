@@ -1,0 +1,123 @@
+#pantalla8_btn{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+}
+
+#pantalla22_img1:hover{
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3); /** Chrome & Safari **/
+  -o-transform: scale(1.3); /** Opera **/
+  -moz-transform: scale(1.3); /** Firefox **/
+  
+}
+
+.divcontenido{
+    margin-bottom: 100px;
+    overflow-y: auto !important;
+    height: calc( 100vh - 200px ) !important;
+    overflow-x: hidden !important;
+}
+
+/* Tamaño del scroll */
+.divcontenido::-webkit-scrollbar {
+  width: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+.divcontenido::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.divcontenido::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.divcontenido::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+.divcontenido::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.divcontenido::-webkit-scrollbar-track:hover, 
+.divcontenido::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+.card_animada {  
+  box-shadow: 0 2.5em .9em -2em #555;
+  position: relative;
+  
+  
+  backface-visibility: hidden;
+  transition: transform .8s cubic-bezier(.63,-0.32,.4,1.39);
+  border-radius: 20px;
+  background-color: #eae9e9;
+  height: 230px;
+  width: 400px;
+  border: 2px #D5D3CF solid;
+}
+
+.card_animada .card-body {
+    padding: 0px;
+}
+
+.card-flip {
+  transform: rotateY(180deg);
+}
+
+.card-front .card-body {
+    display: -webkit-inline-box;
+}
+
+.card-back{
+    background-color: #2DB7F3;
+    color: white;
+    top: -230px;
+}
+
+.card-back .card-body {
+    margin-top: 5px;}
+
+
+.card-icon {
+    background-color: #2DB7F3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 150px;
+    height: 230px;
+    padding: 20px;
+    padding-top: 70px
+}
+
+.card-title {
+    height: 230px;
+    width: 200px;
+    margin-top: 80px
+}
+
+@media (max-width: 600px) {
+  #pantalla8_btn{
+    right: inherit;
+  }
+
+  #pantalla8_info{
+    height: 200px ! important;
+    padding: 0px ! important;
+  }
+}
+
+.ahorcado_intento_2{
+  opacity: 0 !important;
+}
