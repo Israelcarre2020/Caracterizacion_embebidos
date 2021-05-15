@@ -1,6 +1,6 @@
 function pantalla6_info(){
     var info = `
-            <div id="pantalla6_caja">
+            <div id="pantalla6_caja" style= "padding: 1rem">
                 <p class="p_black font-weight-bold">¿Cómo están construidos los sistemas embebidos?</p>
                 <p class="p_black">La mayoría de estos tipos de sistemas en sus componentes siempre traen una computadora con características muy especiales, estas se denominan microcontroladores, estos son microprocesadores que tienen una entrada y una salida en el mismo chip. Estos sistemas poseen una interfaz externa que es el método mediante el cual el dispositivo se conecta a una red para hacer un constante monitoreo del estado del sistema y su diagnóstico.</p>
                 <p class="p_black">Normalmente, para programar los sistemas embebidos, se hace con un lenguaje (idioma) ensamblador de microcontrolador o también utilizando las herramientas de otros lenguajes externos al sistema como C++ o C, en casos en específicos. En otras circunstancias, cuando no se necesita una respuesta instantánea del procesador, se puede usar otro tipo de lenguajes interpretadores como java, esta plataforma tiene una gran capacidad de soporte de red y puede optimizar los dispositivos y procesar los datos</p>

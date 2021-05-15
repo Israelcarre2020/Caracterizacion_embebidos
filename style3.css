@@ -508,8 +508,8 @@ a.article:hover {
 
 .link-image{
     border: 1px solid #2c538e;
-    padding: 8px;
-    margin: 8px;
+    padding: 0px;
+    margin: 0px;
     border-radius: 10px;
 }
 .link-image2{
@@ -521,10 +521,10 @@ a.article:hover {
 }
 
 .link-image img{
-    width: 80px; 
+    width: 30%; 
 }
 .link-image2 img{
-    width: 80px; 
+    width: 45%; 
 }
 .link-image .img-show {
     display: none;
@@ -534,6 +534,7 @@ a.article:hover {
 }
 .link-image:hover .img-none {
     display: none;
+    width: 45%; 
 }
 
 .link-image2:hover{
@@ -1178,6 +1179,11 @@ ul.lineas {
    overflow: hidden;
    transition: all 1s ease;
    top: 0;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: row;
 }
 
 .tabcontent {
