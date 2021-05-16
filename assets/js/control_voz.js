@@ -31,7 +31,7 @@ function controlAudioSlides(numeroSlide) {
             break
 
         case 1:
-            audioActual = new Audio('assets/voz/U14D001.mp3');
+            audioActual = new Audio('assets/voz2/sonido1_p1.mp3');
             break;
         case 2:
             $(`#wrapper>div>.tabs>button`).removeClass("active");
@@ -41,7 +41,8 @@ function controlAudioSlides(numeroSlide) {
             $("#tabObjetivos").addClass("active");
             $(`#Objetivos`).addClass("active");        
             
-            audioActual = new Audio('assets/voz/U019P04002.mp3');
+            audioActual = new Audio('assets/voz2/Sonido2_p2.mp3');
+
             break;            
         case 3:
             $(`#wrapper_2>div>.tabs>button`).removeClass("active");
@@ -56,7 +57,7 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/U019P04005.mp3');
             break;            
         case 4:
-            audioActual = new Audio('assets/voz/U019P04007.mp3');
+            audioActual = new Audio('assets/voz2/Sonido7_p4.mp3');
             break;            
         case 5:
             $(`.menu_actidades`).removeClass("active_actividad");
@@ -65,7 +66,7 @@ function controlAudioSlides(numeroSlide) {
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000);           
-                audioActual = new Audio('assets/voz/U019P04008.mp3');
+                audioActual = new Audio('assets/voz2/Sonido 8_p5.mp3');
             break;    
         case 6:
             $(`.menu_actidades`).removeClass("active_actividad");
@@ -74,15 +75,15 @@ function controlAudioSlides(numeroSlide) {
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000); 
-            audioActual = new Audio('assets/voz/U019P04012.mp3');
+            audioActual = new Audio('assets/voz2/Sonido15_p6.mp3');
             break;                                              
         case 7:
             //$('#carouselActividadAprendizaje2').carousel(0);
-            audioActual = new Audio('assets/voz/U019P04015.mp3');
+            audioActual = new Audio('assets/voz2/Sonido17_p7.mp3');
             break;                                              
         case 8:
             //$(".comentariosFrecuencia").hide();           
-            audioActual = new Audio('assets/voz/U019P04017.mp3');
+            audioActual = new Audio('assets/voz2/Sonido18_p8.mp3');
             break;            
         case 9:
             //$("#carouselFrecuencia").carousel(0);
@@ -285,49 +286,51 @@ function audioTabs(opcion) {
 
     switch (opcion) {
         case 'Objetivos':
-            audioLocation = 'assets/voz/U019P04002.mp3';
+            audioLocation = 'assets/voz2/Sonido2_p2.mp3';
             break;
         case 'Contenido':
-            audioLocation = 'assets/voz/U019P04003.mp3';
+            audioLocation = 'assets/voz2/Sonido3_p2.mp3';
             break;
         case 'Metodologia':
-            audioLocation = 'assets/voz/U019P04004.mp3';
+            audioLocation = 'assets/voz2/Sonido4_p2.mp3';
             break;
         case 'unidad_aprenderas':
-            audioLocation = 'assets/voz/U019P04005.mp3';
+            audioLocation = 'assets/voz2/Sonido5_p3.mp3 ';
             break;
         case 'unidad_necesitas':
-            audioLocation = 'assets/voz/U019P04006.mp3';
+            audioLocation = 'assets/voz2/Sonido6_p3.mp3';
             break;
         case 'carousel_1_a':
-            audioLocation = 'assets/voz/U019P04008.mp3';
+            audioLocation = 'assets/voz2/Sonido 8_p5.mp3';
             break;
         case 'carousel_1_b':
-            audioLocation = 'assets/voz/U019P04009.mp3';
+            audioLocation = 'assets/voz2/Sonido 8_p5.mp3';
             break;
         case 'carousel_1_c':
-            audioLocation = 'assets/voz/U019P04010.mp3';
+            audioLocation = 'assets/voz2/Sonido 11_p5.mp3';
             break;
         /*case 'carousel_1_d':
             audioLocation = 'assets/voz/U019P04011.mp3';
             break;*/
         case 'pantalla6_1':
-            audioLocation = 'assets/voz/U019P04013.mp3';
+            audioLocation = 'assets/voz2/Sonido16_ p6.mp3';
             break;
         case 'pantalla7_1':
             audioLocation = 'assets/voz/U019P04016.mp3';
             break;
         case 'pantalla8_1':
-            audioLocation = 'assets/voz/U019P04017.mp3';
+            audioLocation = 'assets/voz2/Sonido18_p8.mp3';
             break;
         case 'pantalla8_2':
-            audioLocation = 'assets/voz/U019P04018.mp3';
+            audioLocation = 'assets/voz2/Sonido20_p8.mp3';
             break;
         case 'pantalla8_3':
-            audioLocation = 'assets/voz/U019P04019.mp3';
+            audioLocation = 'assets/voz2/Sonido21_8.mp3';
+            audioLocation = 'assets/voz2/Sonido21_8.mp3';
             break;
         case 'pantalla8_4':
-            audioLocation = 'assets/voz/U019P04020.mp3';
+            audioLocation = 'assets/voz2/Sonido22_23_p8.mp3';
+            
             break;
         case 'pantalla10_1':
             audioLocation = 'assets/voz/U019P04038.mp3';
@@ -361,9 +364,9 @@ function pantalla8_voz(numeroTab) {
 
     switch (parseInt(numeroTab)) {
         case 1:
-            audioLocation = 'assets/voz/U019P04021.mp3';
+           // audioLocation = 'assets/voz/U019P04021.mp3';
             break;
-        case 2:
+ /*        case 2:
             audioLocation = 'assets/voz/U019P04022.mp3';
             break;
         case 3:
@@ -377,10 +380,11 @@ function pantalla8_voz(numeroTab) {
             break;
     
         default:
-            break;
+            break; */
     }
 
     reproducirAudio(audioLocation);
+    
 }
 
 function pantalla9_voz(numeroTab) {
