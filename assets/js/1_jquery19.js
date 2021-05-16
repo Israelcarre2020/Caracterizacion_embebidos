@@ -1195,7 +1195,7 @@ function pantalla25_info2(num){
               <div class="col-md-12">
                 <p class="p_black">En este fragmento del datasheet se muestran todos los rangos de operación, esta parte es muy importante y se debe de respetar los rangos de operación estipulados por el fabricante, ya que si se pasan por alto en el peor de los casos podría quemarse el componente, dañándolo y causando perdida.</p>
                 <p class="p_black">En este fragmento se muestra en ocasiones tres características con tres valores: mínimo MIN, el nominal NOM y el máximo MAX, esto con el fin de tener un valor de operación más preciso, ya que todos los componentes no son iguales y funcionan de diferente manera.</p>
-                <img class="img-fluid" src="assets/img/tabla14.png">
+                <img class="img-fluid" src="assets/img/tabla14.jpg">
                 <p class="p_black text-center">rango máximo absoluto</p>
               </div>
             </div>
@@ -1261,7 +1261,7 @@ function pantalla25_info2(num){
             <div class="row">
               <div class="col-md-12">
                 <p class="p_black">Nos demuestra como varían las salidas en función de las entradas, para los circuitos lógicos se debe de recordar que las señales van en código binario de 0 y 1, lo que significa que está clasificada en falso y verdadero, de ahí viene el nombre de tablas de verdad.</p>
-                <img class="img-fluid" src="assets/img/Ilustración13.png">
+                <img class="img-fluid" src="assets/img/Ilustración13.jpg">
                 <p class="p_black text-center">tabla de verdad de microcontrolador AVR ATtiny2313</p>
               </div>
             </div>
