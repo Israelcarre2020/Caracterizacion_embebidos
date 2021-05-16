@@ -19,6 +19,12 @@ function controlAudioSlides(numeroSlide) {
     if(audioActual)
         audioActual.pause();
 
+
+
+
+        $("#unmute").hide();
+        $("#mute").show();
+
     switch (numeroSlide) {
         case 0:
      
