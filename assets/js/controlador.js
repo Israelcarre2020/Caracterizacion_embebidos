@@ -197,21 +197,21 @@ $(document).ready(function () {
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 18:
+            case 40:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 21:
+            case 50:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 32:
+            case 51:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
@@ -657,6 +657,7 @@ var intentosSeleccionMultiple3=0;
 function seleccionMultiple3() {
 
     var pregunta_3_1 = $("input[name='pregunta_3_1']:checked").val();
+    
     var pregunta_3_2 = $("input[name='pregunta_3_2']:checked").val();
 
    /* if(!(pregunta_3_1 && pregunta_3_2 && pregunta_3_3 && pregunta_3_4 && pregunta_3_5 && pregunta_3_6)) {
@@ -666,14 +667,21 @@ function seleccionMultiple3() {
 
     var calificacion = 0;
 
-    $("#pregunta_3_1").css("background-color", "rgb(255 0 0 / 0.2)")
-    if(pregunta_3_1 == "a"){
+    $("#pregunta_3_1").css("background-color", "rgb(255 0 0 / 0.2)");
+    $("#pregunta_3_2").css("background-color", "rgb(255 0 0 / 0.2)");
+
+
+    
+
+    if(pregunta_3_1 == "a" && pregunta_3_2 == "b" ){
     $("#calificacionEjercicio_3").show();
         calificacion = 1;
         $("#pregunta_3_1").css("background-color", "rgb(57 236 36 / 20%)");
-    $("#calificacionEjercicio_3").html(`Tu calificación es: ${calificacion}/1`);  
+    $("#calificacionEjercicio_3").html(`Tu calificación es: ${calificacion}/1`); 
+     
     }
 
+  
 
     if (calificacion === 1) {
         Swal.fire({

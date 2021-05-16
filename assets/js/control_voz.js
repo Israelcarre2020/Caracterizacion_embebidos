@@ -40,7 +40,8 @@ function controlAudioSlides(numeroSlide) {
             $("#tabUnidad_aprenderas").addClass("active");
             $(`#unidad_aprenderas`).addClass("active");        
 
-            $('#carouselActividadAprendizaje1').carousel(0);
+            $('#carouselExampleIndicators').carousel(0);
+            $('#carouselExampleIndicators1').carousel(0);
             audioActual = new Audio('assets/voz/U019P04005.mp3');
             break;            
         case 4:
