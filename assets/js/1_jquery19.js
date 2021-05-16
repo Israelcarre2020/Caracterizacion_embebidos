@@ -814,7 +814,7 @@ function pantalla22_info(num){
     $(".punto22_color").css('background','#ffc107');
     $(".punto22_color").removeClass('text-warning');
     $(".punto22_color").addClass('text-primary');
-    $(".cambio22_color"+num).css('background','#2c538e');
+    $(".cambio22_color"+num).css('background','#ffffff');
     $(".cambio22_color"+num).removeClass('text-primary');
     $(".cambio22_color"+num).addClass('text-warning');
     var parrafo = "";
@@ -892,7 +892,7 @@ function cambio22_color1(num){
 
 function cambio22_color2(num){
   $("#pantalla22_Cohesión").css("background","#FFFFFF");
-  $(".Cohesión22_color").css("background","#ffc107");
+  $(".Cohesión22_color").css("background","#007bff");
   $(".Cohesión22_"+num).css("background","#FFFFFF");
   var parrafo = "";
   if (num == 1) {

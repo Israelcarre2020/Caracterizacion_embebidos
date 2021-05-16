@@ -55,7 +55,7 @@ function controlAudioSlides(numeroSlide) {
             $('#carouselExampleIndicators').carousel(0);
             $('#carouselExampleIndicators1').carousel(0);
             
-            audioActual = new Audio('assets/voz/U019P04005.mp3');
+            audioActual = new Audio('assets/voz2/Sonido5_p3.mp3');
             break;            
         case 4:
             audioActual = new Audio('assets/voz2/Sonido7_p4.mp3');

@@ -8,6 +8,9 @@ var terminar_tiempo;
 var hours;
 var segundosInicial;
 var sec_num;
+
+var audioActual = new Audio();
+
 $(document).ready(function () {
     updateClock();
     $("#sidebar").mCustomScrollbar({
@@ -31,11 +34,14 @@ $(document).ready(function () {
 
     $('#porcentaje_curso').on('shown.bs.popover', function () {
         var numItems = $('.done').length / 2;
-        var porcent = parseFloat((numItems/numSlide) * 100).toFixed( 2 );
+        var porcent = parseFloat(((numItems/(numSlide+2))) * 100).toFixed( 2 );
         $("#percent_curso").percircle({percent: porcent ,animate: "true"});
     })
 
     $('#icon_actividades').off('click').on('click', function(){
+        
+        
+
         if($(".divcontenido").is(':visible')){
             $(".divcontenido").animate({ width: 'hide' }); 
             $(".menu-actividades").show(1000); 
