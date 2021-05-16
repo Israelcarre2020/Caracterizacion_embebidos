@@ -232,6 +232,7 @@ $(document).ready(function () {
 
     $("#smartwizard").on("stepContent", function(e, anchorObject, stepIndex, stepDirection) {
         console.log("Here is the content for step " + stepIndex);
+       
         controlAudioSlides(stepIndex);
         switch(stepIndex) {
             default:

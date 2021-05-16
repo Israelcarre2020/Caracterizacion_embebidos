@@ -88,7 +88,8 @@ function controlAudioSlides(numeroSlide) {
         case 9:
             //$("#carouselFrecuencia").carousel(0);
             $('#carouselActividadAprendizaje2').carousel(0);
-            audioActual = new Audio('assets/voz/U019P04026.mp3');
+            audioActual = new Audio();
+            //audioActual = new Audio('assets/voz/U019P04026.mp3');
             break;            
         case 10:
             //$("#carouselGeneracionCorriente").carousel(0);
@@ -98,7 +99,7 @@ function controlAudioSlides(numeroSlide) {
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000);; 
-            audioActual = new Audio('assets/voz/U019P04038.mp3');
+            audioActual = new Audio('assets/voz2/Sonido24_p9.mp3');
             break;            
         case 11:       
         $(`.menu_actidades`).removeClass("active_actividad");
@@ -107,13 +108,13 @@ function controlAudioSlides(numeroSlide) {
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000);   
-            audioActual = new Audio('assets/voz/U019P04047.mp3');
+            audioActual = new Audio('assets/voz2/Sonido31_p10.mp3');
             break;            
         case 12:
-            audioActual = new Audio('assets/voz/U14D053.mp3');
+            audioActual = new Audio('assets/voz2/Sonido32_p11.mp3');
             break;
         case 13:      
-            audioActual = new Audio('assets/voz/U14D060.mp3');
+        audioActual = new Audio();
             break;            
         case 14:
             $(`.menu_actidades`).removeClass("active_actividad");
@@ -309,6 +310,24 @@ function audioTabs(opcion) {
         case 'carousel_1_c':
             audioLocation = 'assets/voz2/Sonido 11_p5.mp3';
             break;
+            case 'carousel_2_a':
+            audioLocation = 'assets/voz2/Sonido24_p9.mp3';
+            break;
+        case 'carousel_2_b':
+            audioLocation = 'assets/voz2/Sonido25_p9.mp3';
+            break;
+        case 'carousel_2_c':
+            audioLocation = 'assets/voz2/Sonido27_p9.mp3';
+            break;
+            case 'carousel_3_a':
+            audioLocation = 'assets/voz2/Sonido35_p12.mp3';
+            break;
+        case 'carousel_3_b':
+            audioLocation = 'assets/voz2/Sonido 8_p5.mp3';
+            break;
+        case 'carousel_3_c':
+            audioLocation = 'assets/voz2/Sonido 11_p5.mp3';
+            break;
         /*case 'carousel_1_d':
             audioLocation = 'assets/voz/U019P04011.mp3';
             break;*/
@@ -333,15 +352,15 @@ function audioTabs(opcion) {
             
             break;
         case 'pantalla10_1':
-            audioLocation = 'assets/voz/U019P04038.mp3';
+            audioLocation = 'assets/voz2/Sonido32_p11.mp3';
             break;
         case 'pantalla10_2':
-            audioLocation = 'assets/voz/U019P04039.mp3';
+            audioLocation = 'assets/voz2/Sonido33_p11.mp3';
             break;
         case 'pantalla10_3':
-            audioLocation = 'assets/voz/U019P04040.mp3';
+            audioLocation = 'assets/voz2/Sonido34_p11.mp3 ';
             break;
-        case 'pantalla10_4':
+     /*    case 'pantalla10_4':
             audioLocation = 'assets/voz/U019P04041.mp3';
             break;
         case 'pantalla11_1_a':
@@ -349,7 +368,7 @@ function audioTabs(opcion) {
             break;
         case 'pantalla11_1_b':
             audioLocation = 'assets/voz/U019P04050.mp3';
-            break;
+            break; */
 
         default:
             break;
