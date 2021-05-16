@@ -123,7 +123,7 @@ function controlAudioSlides(numeroSlide) {
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000);; 
-            audioActual = new Audio('assets/voz/U14D067.mp3');
+            audioActual = new Audio('assets/voz2/Sonido35_p12.mp3');
             break;            
         case 15:
             $(`.menu_actidades`).removeClass("active_actividad");
@@ -132,10 +132,10 @@ function controlAudioSlides(numeroSlide) {
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
                 $('.conceptos1').show().css({ 'opacity': 0, 'bottom': '-100px' }).animate({ 'opacity': '1', 'bottom': 0 }, 1000);
-            audioActual = new Audio('assets/voz/U14D068.mp3');
+            audioActual = new Audio('assets/voz2/Sonido42_ p13.mp3');
             break;               
         case 16:
-            audioActual = new Audio('assets/voz/U019P04037.mp3');
+            audioActual = new Audio('assets/voz2/Sonido43_ p14.mp3 ');
             break;            
         case 17:
             $("#quiz-restart-btn").click();
@@ -146,7 +146,7 @@ function controlAudioSlides(numeroSlide) {
         case 18:
             intentosJuego=0;
             
-            audioActual = new Audio('assets/voz/U14D079.mp3');
+            audioActual = new Audio('assets/voz2/Sonido44_45_46_p15.mp3');
             break;            
         case 19:       
           
@@ -305,7 +305,7 @@ function audioTabs(opcion) {
             audioLocation = 'assets/voz2/Sonido 8_p5.mp3';
             break;
         case 'carousel_1_b':
-            audioLocation = 'assets/voz2/Sonido 8_p5.mp3';
+            audioLocation = 'assets/voz2/Sonido 9_p5.mp3';
             break;
         case 'carousel_1_c':
             audioLocation = 'assets/voz2/Sonido 11_p5.mp3';
@@ -323,10 +323,10 @@ function audioTabs(opcion) {
             audioLocation = 'assets/voz2/Sonido35_p12.mp3';
             break;
         case 'carousel_3_b':
-            audioLocation = 'assets/voz2/Sonido 8_p5.mp3';
+            audioLocation = 'assets/voz2/Sonido36_p12.mp3';
             break;
         case 'carousel_3_c':
-            audioLocation = 'assets/voz2/Sonido 11_p5.mp3';
+            audioLocation = 'assets/voz2/Sonido38_ p12.mp3';
             break;
         /*case 'carousel_1_d':
             audioLocation = 'assets/voz/U019P04011.mp3';
