@@ -1,5 +1,6 @@
 var audioActivo = true;
 var audioActual = new Audio();
+var mute = false;
 
 /**
  * por sí en algún momento se necesita saber el slide actual del smart wizard
@@ -19,6 +20,10 @@ function controlAudioSlides(numeroSlide) {
         audioActual.pause();
 
     switch (numeroSlide) {
+        case 0:
+     
+            break
+
         case 1:
             audioActual = new Audio('assets/voz/U14D001.mp3');
             break;
@@ -249,10 +254,12 @@ function controlAudioSlides(numeroSlide) {
     }
     
     if(!audioActivo) {
+
         $("#pauseAudio").hide();
         $("#resumeAudio").show();
         return false;
     } else {
+  
         $("#resumeAudio").hide();
         $("#pauseAudio").show();        
     }
@@ -548,24 +555,31 @@ $('.modal').on('hidden.bs.modal', function (e) {
         audioActual.pause();    
 });
 function audioActivoFuncion() {
+    
     audioActivo = !audioActivo;
     
     if(!audioActivo) {
-        $("#iconoAudioActivo").hide();
-        $("#iconoAudioInactivo").show();
+       // $('iconoAudioActivo[src=' + 'assets/img/Icono12.png' + ']').attr('src', 'assets/img/Icono_4.png');
+        //$("#iconoAudioActivo").hide();
+        //$("#iconoAudioInactivo").show();
+
         $("#pauseAudio").hide();
         $("#resumeAudio").show();
         if (audioActual)
         audioActual.pause();          
     } else {
-        $("#iconoAudioInactivo").hide();        
-        $("#iconoAudioActivo").show();
+        //$('iconoAudioActivo[src="' + 'assets/img/Icono_4.png' + '"]').attr('src', 'assets/img/Icono12.png');
+        //$("#iconoAudioInactivo").hide();        
+        //$("#iconoAudioActivo").show();
+
         $("#pauseAudio").show();
         $("#resumeAudio").hide();
         if (audioActual)
         audioActual.play();  
     }
 }
+
+
 
 $("#pauseAudio").click(function() {
 
@@ -577,31 +591,65 @@ $("#pauseAudio").click(function() {
 
     $("#pauseAudio").hide();
     $("#resumeAudio").show();
+
 });
 
 $("#resumeAudio").click(function() {
+
 
     if (!audioActivo)
         return false;
 
     if (audioActual)
-        audioActual.play();       
+        audioActual.play(); 
+
 
     $("#resumeAudio").hide();
     $("#pauseAudio").show();
+
+});
+
+$("#mute").click(function() {
+
+    mute = !mute;
+
+    if (audioActual)
+        audioActual.volume = 0;
+
+    $("#mute").hide();
+    $("#unmute").show();
+
+});
+
+$("#unmute").click(function() {
+
+    mute = !mute;
+
+    if (audioActual)
+        audioActual.volume = 1;       
+
+    $("#unmute").hide();
+    $("#mute").show();
+
 });
 
 function reproducirAudio(audioLocation) {
+    
+    if (mute)
+        audioActual.volume = 0;   
+
     if (audioActual)
         audioActual.pause();    
 
     audioActual = new Audio(audioLocation);        
 
     if (!audioActivo) {
+  
         $("#pauseAudio").hide();
         $("#resumeAudio").show();
         return false;
     } else {
+
         $("#resumeAudio").hide();
         $("#pauseAudio").show();
     }
