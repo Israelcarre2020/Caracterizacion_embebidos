@@ -59,20 +59,20 @@ $(document).ready(function () {
                 $('#smartwizard2').smartWizard("goToStep", 5);
             break;
             case "c2":
-                $('#smartwizard').smartWizard("goToStep", 5);
-                $('#smartwizard2').smartWizard("goToStep", 5);
+                $('#smartwizard').smartWizard("goToStep", 10);
+                $('#smartwizard2').smartWizard("goToStep", 10);
             break;
             case "c3":
-                $('#smartwizard').smartWizard("goToStep", 5);
-                $('#smartwizard2').smartWizard("goToStep", 5);
+                $('#smartwizard').smartWizard("goToStep", 14);
+                $('#smartwizard2').smartWizard("goToStep", 14);
             break;
             case "c4":
-                $('#smartwizard').smartWizard("goToStep", 18);
-                $('#smartwizard2').smartWizard("goToStep", 18);
+                $('#smartwizard').smartWizard("goToStep", 20);
+                $('#smartwizard2').smartWizard("goToStep", 20);
             break;
             case "c5":
-                $('#smartwizard').smartWizard("goToStep", 21);
-                $('#smartwizard2').smartWizard("goToStep", 21);
+                $('#smartwizard').smartWizard("goToStep", 23);
+                $('#smartwizard2').smartWizard("goToStep", 23);
             break;
           default:
             //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
