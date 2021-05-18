@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     $('#icon_actividades').off('click').on('click', function(){
         
-        
+        pause_audio();
 
         if($(".divcontenido").is(':visible')){
             $(".divcontenido").animate({ width: 'hide' }); 
@@ -203,21 +203,21 @@ $(document).ready(function () {
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 40:
+            case 10:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 50:
+            case 20:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 51:
+            case 23:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
@@ -762,3 +762,4 @@ function updateClock()
         clearInterval(controlaTiempo);
     }
     };
+

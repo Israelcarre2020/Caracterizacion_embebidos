@@ -20,10 +20,10 @@ function controlAudioSlides(numeroSlide) {
         audioActual.pause();
 
 
-
-
         $("#unmute").hide();
         $("#mute").show();
+
+
 
     switch (numeroSlide) {
         case 0:
