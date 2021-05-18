@@ -3,8 +3,18 @@ var audioActual = new Audio();
 var mute = false;
 
 /**
- * por sí en algún momento se necesita saber el slide actual del smart wizard
+ * por sí e
+ * 
+ * n algún momento se necesita saber el slide actual del smart wizard
  */
+
+ $('#carouselExampleIndicators').carousel('pause');
+ $('#carouselExampleIndicators1').carousel('pause');
+ $('#carouselExampleIndicators2').carousel('pause');
+ $('#carouselExampleIndicatorsX').carousel('pause');
+ $('#carouselExampleIndicatorsY').carousel('pause');
+
+
 function onLoadAudio() {
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlAudioSlides(stepIndex);
@@ -52,8 +62,8 @@ function controlAudioSlides(numeroSlide) {
             $("#tabUnidad_aprenderas").addClass("active");
             $(`#unidad_aprenderas`).addClass("active");        
 
-            $('#carouselExampleIndicators').carousel(0);
-            $('#carouselExampleIndicators1').carousel(0);
+            /* $('#carouselExampleIndicators').carousel(0);
+            $('#carouselExampleIndicators1').carousel(0); */
             
             audioActual = new Audio('assets/voz2/Sonido5_p3.mp3');
             break;            
@@ -63,6 +73,7 @@ function controlAudioSlides(numeroSlide) {
         case 5:
             $(`.menu_actidades`).removeClass("active_actividad");
             $(`.menu_actidades1`).addClass("active_actividad");
+            $('#carouselExampleIndicators').carousel('pause');
             /* $(`.menu_actidades2`).addClass("active_actividad");
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
@@ -96,6 +107,7 @@ function controlAudioSlides(numeroSlide) {
             //$("#carouselGeneracionCorriente").carousel(0);
             $(`.menu_actidades`).removeClass("active_actividad");
             $(`.menu_actidades2`).addClass("active_actividad");
+            $('#carouselExampleIndicators1').carousel('pause');
             /* $(`.menu_actidades2`).addClass("active_actividad");
             $(`.menu_actidades3`).addClass("active_actividad"); */
                 $('.pasos-conceptos').hide();
@@ -306,48 +318,64 @@ function audioTabs(opcion) {
             audioLocation = 'assets/voz2/Sonido 8_p5.mp3';
             break;
         case 'carousel_1_b':
-            audioLocation = 'assets/voz2/Sonido 9_p5.mp3';
+            audioLocation = 'assets/voz2/carousel_1_b.mp3';
             break;
         case 'carousel_1_c':
-            audioLocation = 'assets/voz2/Sonido 11_p5.mp3';
+            audioLocation = 'assets/voz2/carousel_1_c.mp3';
             break;
+        case 'carousel_1_d':
+                audioLocation = 'assets/voz2/lainformacion_necesaria.mp3';
+                break;
             case 'carousel_2_a':
             audioLocation = 'assets/voz2/Sonido24_p9.mp3';
             break;
         case 'carousel_2_b':
-            audioLocation = 'assets/voz2/Sonido25_p9.mp3';
+            audioLocation = 'assets/voz2/carousel_2_b.mp3';
             break;
         case 'carousel_2_c':
-            audioLocation = 'assets/voz2/Sonido27_p9.mp3';
+            audioLocation = 'assets/voz2/carousel_2_c.mp3';
             break;
+            case 'carousel_2_d':
+                audioLocation = 'assets/voz2/lainformacion_necesaria.mp3';
+                break;
             case 'carousel_3_a':
             audioLocation = 'assets/voz2/Sonido35_p12.mp3';
             break;
         case 'carousel_3_b':
-            audioLocation = 'assets/voz2/Sonido36_p12.mp3';
+            audioLocation = 'assets/voz2/carousel_3_b.mp3';
             break;
         case 'carousel_3_c':
-            audioLocation = 'assets/voz2/Sonido38_ p12.mp3';
+            audioLocation = 'assets/voz2/carousel_3_c.mp3';
             break;
+            case 'carousel_3_d':
+                audioLocation = 'assets/voz2/lainformacion_necesaria.mp3';
+                break;
             case 'carousel_4_a':
             audioLocation = 'assets/voz2/Sonido47_ p16.mp3';
             break;
         case 'carousel_4_b':
-            audioLocation = 'assets/voz2/Sonido48_ p16.mp3';
+            audioLocation = 'assets/voz2/carousel_4_b.mp3';
             break;
         case 'carousel_4_c':
-            audioLocation = 'assets/voz2/Sonido50_ p16.mp3';
+            audioLocation = 'assets/voz2/carousel_4_c.mp3';
             break;
+            case 'carousel_4_d':
+                audioLocation = 'assets/voz2/lainformacion_necesaria.mp3';
+                break;
 
             case 'carousel_5_a':
                 audioLocation = 'assets/voz2/Sonido55_ p18.mp3';
                 break;
             case 'carousel_5_b':
-                audioLocation = 'assets/voz2/Sonido56_ p18.mp3';
+                audioLocation = 'assets/voz2/carousel_5_b.mp3';
                 break;
             case 'carousel_5_c':
-                audioLocation = 'assets/voz2/Sonido58_ p18.mp3';
+                audioLocation = 'assets/voz2/carousel_5_c.mp3';
                 break;
+
+                case 'carousel_5_d':
+                    audioLocation = 'assets/voz2/lainformacion_necesaria.mp3';
+                    break;
         /*case 'carousel_1_d':
             audioLocation = 'assets/voz/U019P04011.mp3';
             break;*/
