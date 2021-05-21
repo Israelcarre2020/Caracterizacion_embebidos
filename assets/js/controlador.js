@@ -210,6 +210,20 @@ $(document).ready(function () {
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
+                case 10:
+                    pause_audio();
+                    $(".divcontenido").animate({ width: 'hide' }); 
+                    $(".menu-actividades").show(1000); 
+                    setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
+                    $(".controls-slide").hide();
+                    break; 
+                case 14:
+                pause_audio();
+                $(".divcontenido").animate({ width: 'hide' }); 
+                $(".menu-actividades").show(1000); 
+                setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
+                $(".controls-slide").hide();
+                break;
             case 20:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
