@@ -873,7 +873,7 @@ function cambio22_color1(num){
   var parrafo = "";
   if (num == 1) {
         parrafo = `
-                  <p class="p_black font-weight-bold">Coherencia textual: </p>
+                  <p class="p_black font-weight-bold">Coherencia textual </p>
                   <p class="p_black">Cuando se habla de coherencia textual se refiere a la redacción de un texto, como están estructuradas las ideas principales y las secundarias, también como está estructuradas sus unidades (oraciones, párrafos, secciones o partes). Para tener una buena coherencia en un texto lo principal es tener un buen orden de ideas.</p>
                   `;
   }else if (num == 2) {
