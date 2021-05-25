@@ -1024,6 +1024,42 @@ ul.lineas {
    }
 }
 
+
+
+.seleccion2{
+    background-image: url(assets/img/linea1.png);
+     background-size: contain;
+      background-repeat: no-repeat; 
+      cursor: pointer;
+}    
+
+.seleccion1{
+    background-image: url(assets/img/linea1.png); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+     padding: 0px 90px;
+     height: 120px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .seleccion1{
+        background-image:none;
+        background-repeat: no-repeat;
+         padding: 0px 90px;
+         height: 120px;
+    }
+
+    .seleccion2{
+        background-image: none;
+         background-size: contain;
+          background-repeat: no-repeat; 
+          cursor: pointer;
+    }    
+    
+    }
+
+
 /* Tab Links */
 
 .tablinks {
@@ -2114,7 +2150,7 @@ input#show:checked ~ input#flecha {
 
 .titulo_portada{
     color: #2c538e;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bolder;
     margin-top: 70px;
     margin-bottom: 30px;
