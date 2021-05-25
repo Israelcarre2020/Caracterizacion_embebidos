@@ -636,19 +636,15 @@ function audioActivoFuncion() {
     audioActivo = !audioActivo;
     
     if(!audioActivo) {
-       // $('iconoAudioActivo[src=' + 'assets/img/Icono12.png' + ']').attr('src', 'assets/img/Icono_4.png');
-        //$("#iconoAudioActivo").hide();
-        //$("#iconoAudioInactivo").show();
-
+        $("#iconoAudioActivo").hide();
+        $("#iconoAudioInactivo").show();
         $("#pauseAudio").hide();
         $("#resumeAudio").show();
         if (audioActual)
-        audioActual.pause();          
+        audioActual.pause();           
     } else {
-        //$('iconoAudioActivo[src="' + 'assets/img/Icono_4.png' + '"]').attr('src', 'assets/img/Icono12.png');
-        //$("#iconoAudioInactivo").hide();        
-        //$("#iconoAudioActivo").show();
-
+        $("#iconoAudioInactivo").hide();        
+        $("#iconoAudioActivo").show();
         $("#pauseAudio").show();
         $("#resumeAudio").hide();
         if (audioActual)
